@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import styles from "./index.module.css";
+import Link from 'next/link';
+import styles from './index.module.css';
 
 export default function Footer() {
   return (
@@ -21,3 +21,4 @@ export default function Footer() {
     </footer>
   );
 }
+
