@@ -8,10 +8,11 @@ import { Suspense } from "react";
 function SearchFieldComponent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const currentQuery = searchParams.get("q") || ""; // ← 現在の検索語を保持
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const q = e.currentTarget.elements.namedItem("q");
+    const q = e.currentTarget.elements.namedItem("q") as HTMLInputElement;
     if (q instanceof HTMLInputElement) {
       const params = new URLSearchParams();
       params.set("q", q.value.trim());
@@ -32,7 +33,7 @@ function SearchFieldComponent() {
         <input
           type="text"
           name="q"
-          defaultValue={searchParams.get("q") ?? undefined}
+          defaultValue={currentQuery} // ← URLのqパラメータを反映
           placeholder="キーワードを入力"
           className={styles.searchInput}
         />

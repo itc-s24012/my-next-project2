@@ -9,15 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.4",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",
     "microcms-js-sdk": "^3.1.0",
-    "next": "14.1.4",
+    "next": "^14.2.24",
+    "nextjs-basic-auth-middleware": "^3.1.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/classnames": "^2.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

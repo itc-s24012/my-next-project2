@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import cx from 'classnames';
-import styles from './index.module.css';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import cx from "classnames";
+import styles from "./index.module.css";
 
 export default function Menu() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -36,7 +36,7 @@ export default function Menu() {
         </button>
       </nav>
       <button className={styles.button} onClick={open}>
-        <Image src="/menu.svg" alt="メニュー" width={24} height={24} />
+        <Image src="/menu.svg" alt="メニュー" width={24} height={24} priority />
       </button>
     </div>
   );

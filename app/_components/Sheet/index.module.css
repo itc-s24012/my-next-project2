@@ -12,7 +12,6 @@
     width: calc(100% - 80px);
   }
 }
-
 @media (max-width: 640px) {
   .container {
     width: calc(100% - 32px);

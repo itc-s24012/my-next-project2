@@ -13,14 +13,8 @@
 }
 
 .logo {
-  height: 24px;
   width: auto;
-}
-
-.items {
-  display: flex;
-  color: #fff;
-  gap: 40px;
+  height: 24px;
 }
 
 @media (max-width: 640px) {
